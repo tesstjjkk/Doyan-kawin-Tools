@@ -59,3 +59,27 @@ PhoneInfoga adalah framework OSINT untuk nomor telepon yang populer — bisa dip
    ```bash
    tar -xf PhoneInfoga_Linux_x86_64.tar.gz
    ./phoneinfoga version
+
+
+# 📑 Dokumentasi — Script `scan_phone.sh`
+
+Script ini digunakan untuk menjalankan **PhoneInfoga** guna melakukan OSINT (Open Source Intelligence) pada nomor telepon.  
+Hasil akan disimpan dalam format `.json` dan `.txt` di folder `outputs/`.
+
+⚠️ **Catatan Penting**:  
+Gunakan script ini hanya untuk **nomor yang Anda miliki izin untuk telusuri**. Hasil yang ditampilkan adalah jejak publik, bukan data pribadi sensitif.
+
+---
+
+## 🔧 Prasyarat
+- Sistem operasi: Linux / macOS (untuk Windows bisa via WSL atau Docker).
+- **PhoneInfoga** binary *atau* Docker dengan image `sundowndev/phoneinfoga`.
+- Bash (sudah tersedia di Linux/macOS, di Windows gunakan WSL/PowerShell dengan bash).
+
+---
+
+## 📥 Instalasi
+1. Clone repo atau salin file `scan_phone.sh`.
+2. Beri izin eksekusi:
+   ```bash
+   chmod +x scan_phone.sh
